@@ -1,0 +1,28 @@
+==================================================================
+EJEMPLOS DE REPORTES CIUDADANOS PARA PRUEBAS (FORMATO JSON)
+==================================================================
+
+[EJEMPLO 1: REPORTE DE INFRAESTRUCTURA Y SEGURIDAD VIAL]
+------------------------------------------------------------------
+Este caso representa un daño físico en la malla vial que afecta 
+la movilidad y la seguridad de la comunidad.
+
+Petición POST a: http://localhost:3000/reportes
+Body (JSON):
+{
+  "tipo": "infraestructura",
+  "descripcion": "Presencia de un bache profundo en la calzada principal de la Avenida Santander, intersección con la Calle 5. El daño abarca aproximadamente un metro de diámetro y expone el alcantarillado, generando riesgo de accidentes para motocicletas y vehículos particulares."
+}
+
+
+[EJEMPLO 2: REPORTE DE SANEAMIENTO Y SALUD AMBIENTAL]
+------------------------------------------------------------------
+Este caso representa una afectación al espacio público y la salud 
+comunitaria por el manejo inadecuado de residuos sólidos.
+
+Petición POST a: http://localhost:3000/reportes
+Body (JSON):
+{
+  "tipo": "ambiente",
+  "descripcion": "Acumulación no autorizada de escombros y residuos de poda en la zona verde aledaña al parque comunitario del barrio. La obstrucción lleva más de 72 horas sin ser retirada, impidiendo el libre tránsito peatonal y propiciando la aparición de vectores de contaminación."
+}
