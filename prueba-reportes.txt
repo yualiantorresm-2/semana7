@@ -1,0 +1,38 @@
+==================================================================
+PRUEBAS DE ENDPOINTS - MÓDULO DE REPORTES (API EXPRESS)
+==================================================================
+
+1. REGISTRO DE NUEVO REPORTE (Petición POST)
+------------------------------------------------------------------
+URL: http://localhost:3000/reportes
+Método: POST
+Headers: Content-Type: application/json
+Body (JSON):
+{
+  "tipo": "infraestructura",
+  "descripcion": "daño en alumbrado publico"
+}
+
+Respuesta esperada (JSON):
+{
+  "mensaje": "Reporte registrado",
+  "reporte": {
+    "id": 1,
+    "tipo": "infraestructura",
+    "descripcion": "daño en alumbrado publico"
+  }
+}
+
+2. CONSULTA DE REPORTES REGISTRADOS (Petición GET)
+------------------------------------------------------------------
+URL: http://localhost:3000/reportes
+Método: GET
+
+Respuesta esperada (JSON):
+[
+  {
+    "id": 1,
+    "tipo": "infraestructura",
+    "descripcion": "daño en alumbrado publico"
+  }
+]
